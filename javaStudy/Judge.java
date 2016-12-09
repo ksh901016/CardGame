@@ -7,6 +7,7 @@ public class Judge {
     
     final int theCardNum = 7;  // 나눠줄 카드 개수
     private List<Player> playerList = new ArrayList();
+	private Deck deck = new Deck();
     
     // 플레이어 등록
     public void setPlayerNum(int num){
@@ -20,7 +21,6 @@ public class Judge {
     // 카드나눠주기
     public void divCards(){
         // 카드뭉치를 섞는다.
-        Deck deck = new Deck();
         deck.shuffle();
         
         // 카드를 나눠준다.
